@@ -1,0 +1,35 @@
+html{
+    --box-height: 20px;
+    --box-width: 20px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    text-align: center;
+    font-size: 1.5em;
+}
+.small-title{
+    font-size: 0.6em;
+    margin-left: 200px;
+}
+#chess-broad{
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,var(--box-height));
+    grid-template-rows: repeat(auto-fit,var(--box-width));
+    align-self: center;
+    height: 900px;
+    width: 900px;
+}
+#chess-broad > div{
+    border: 1px rgba(167, 162, 162, 0.5) solid;
+    text-align: center;
+}
+.Xchess{
+    color: rgb(74, 74, 177);
+}
+.Ochess{
+    color: rgb(211, 94, 94);
+}
