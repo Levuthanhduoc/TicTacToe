@@ -111,19 +111,8 @@ button{
 .O{
     color: rgb(211, 94, 94);
 }
-#win{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    z-index: 2;
-    border: black solid 1px;
+.win{
     background-color: rgb(253, 213, 79);
-    top: -550px;
-    right: -400px;
 }
 #player-info-box{
     display: flex;
@@ -141,4 +130,15 @@ button{
 }
 input:invalid{
     background: #FF3300;
+}
+.wait{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    height:95%;
+    background-color: rgba(31, 30, 30, 0.5);
+    z-index: 1;
 }
